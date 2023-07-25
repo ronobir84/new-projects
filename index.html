@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,39 +11,100 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700;800&display=swap"
         rel="stylesheet">
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            'gradient-start': '#FF8938',
-                            'gradient-end ': '#F00',
-                        }
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'gradient-start': '#FF8938',
+                        'gradient-end ': '#F00',
                     }
                 }
             }
-        </script>
-        <style>
-            .font-EBGaramond{
-                font-family: 'EB Garamond', serif;
-            }
-        </style>
+        }
+    </script>
+    <style>
+        .font-EBGaramond {
+            font-family: 'EB Garamond', serif;
+        }
+    </style>
 </head>
 
 <body class="font-family: 'EB Garamond', serif;">
-    <header>
+    <header class="container mx-auto">
         <nav>
+            <nav class="mt-14">
+                <div class="navbar bg-base-100">
+                    <div class="flex-1">
+                        <div class="dropdown">
+                            <label tabindex="0" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </label>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52 gap-6 text-[#707070]">
+                                <li><a>Home</a></li>
+                                <li><a>Services</a></li>
+                                <li><a>Cases</a></li>
+                                <li><a>Blog</a></li>
+                                <li><a>Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <img src="images/logo2.png" alt="">
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal text-base px-1 gap-6 text-[#707070]">
+                            <li><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Cases</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <a class="btn bg-[#B68C5A]">Free Consultation</a>
+                    </div>
+                </div>
+            </nav>
+            <section class="mt-12">
+                <div>
+                    <div class="hero min-h-screen" style="background-image: url(../banner.png);">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div class="">
+                                <h1 class="mb-5 text-7xl font-extrabold">We Provide Effective <br> Legal Solutions</h1>
+                                <p class="mb-5 text-[#E7E7E7]">There are many variations of passages of Lorem Ipsum
+                                    available, but the majority <br> have suffered alteration in some form, by injected
+                                    humour..</p>
+                                <div>
+                                    <div class="form-control">
+                                        <div class="input-group justify-center mt-8">
+                                            <input type="text" placeholder="Search your services" class="input 
+                                  input-bordered w-1/2" />
+                                            <div class="w-36 rounded-lg bg-[#B68C5A] text-xl p-2 ml-6">
+                                                <button>Search</button>
+                                            </div>
+                                        </div>
 
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+            </section>
         </nav>
     </header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
-
-
+    <script src="https://kit.fontawesome.com/337002c4cc.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
